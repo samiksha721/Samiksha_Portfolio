@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Signal Desk — Samiksha Prasad</title>
+<meta name="description" content="Samiksha Prasad — Product Manager, B2B SaaS: platform, identity &amp; access, martech.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&amp;family=IBM+Plex+Mono:wght@400;500&amp;family=IBM+Plex+Sans:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#F2F4F3}
+a{color:#1D4ED8}a:hover{color:#0E1A24}
+.pf{font-family:'IBM Plex Sans',ui-sans-serif,system-ui,sans-serif;color:#0E1A24;background:#F2F4F3;line-height:1.55;font-size:17px}
+.wrap{max-width:1200px;margin:0 auto;padding:0 40px;box-sizing:border-box}
+.disp{font-family:'Bricolage Grotesque','IBM Plex Sans',sans-serif;letter-spacing:-0.02em}
+.mono{font-family:'IBM Plex Mono',ui-monospace,monospace}
+.eyebrow{font-family:'IBM Plex Mono',ui-monospace,monospace;font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:#4A5866;margin:0}
+.rail{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr));border-top:2px solid #0E1A24;border-bottom:1px solid #CBD3D8}
+.rail>div{padding:20px 20px 20px 0;display:flex;flex-direction:column;gap:6px}
+.sec{display:grid;grid-template-columns:minmax(0,280px) minmax(0,1fr);gap:40px;padding:40px 0;border-top:1px solid #CBD3D8}
+.sec h3{margin:0;font-family:'Bricolage Grotesque','IBM Plex Sans',sans-serif;font-size:26px;line-height:1.15;letter-spacing:-0.01em}
+.sec p{margin:0}
+.body{display:flex;flex-direction:column;gap:14px;max-width:720px}
+.two{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));gap:20px}
+.box{background:#fff;border:1px solid #CBD3D8;border-radius:6px;padding:24px;display:flex;flex-direction:column;gap:10px}
+.box ul{margin:0;padding-left:20px;display:flex;flex-direction:column;gap:8px}
+.ph{color:#4A5866;background:#E6EAE8;padding:1px 6px;border-radius:3px;font-family:'IBM Plex Mono',ui-monospace,monospace;font-size:14px}
+@media (max-width:720px){.wrap{padding:0 20px}.hero-h{font-size:42px !important}.sec{grid-template-columns:minmax(0,1fr);gap:12px}}
+</style>
+</head>
+<body>
+<div class="pf">
+
+<header style="border-bottom: 1px solid #CBD3D8">
+<nav class="wrap mono" style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 16px; min-height: 64px; font-size: 14px">
+<a href="../index.html" style="color: #0E1A24; text-decoration: none; padding: 12px 0">← All work</a>
+<a href="angie.html" style="color: #0E1A24; text-decoration: none; padding: 12px 0">Next: Angie →</a>
+</nav>
+</header>
+
+<section class="wrap" style="padding-top: 80px; padding-bottom: 56px; display: flex; flex-direction: column; gap: 24px">
+<p class="eyebrow" style="color: #1D4ED8">Case 04 · AI prototype · Martech</p>
+<h1 class="disp hero-h" style="margin: 0; font-size: 64px; line-height: 1.04; font-weight: 700; max-width: 980px">Signal Desk — an AI campaign builder that shows its maths</h1>
+<p style="margin: 0; font-size: 21px; max-width: 760px; color: #2F3B46">A marketer describes a goal; Signal Desk proposes a campaign built from location, transaction and behavioural signals — and puts a transparent unit-economics model next to it, showing cost against value for every campaign, so nobody mistakes a confident number for a true one.</p>
+</section>
+
+<section class="wrap" style="padding-bottom: 64px">
+<div class="rail">
+<div><span class="eyebrow">Role</span><span>Solo — product, data design, build</span></div>
+<div><span class="eyebrow">Data</span><span>Simulated Zeta-style datasets: location, transaction, behavioural</span></div>
+<div><span class="eyebrow">Stack</span><span>GitHub Pages front end · n8n webhooks for AI logic</span></div>
+<div><span class="eyebrow">Status</span><span>Working web app · not yet published</span></div>
+</div>
+</section>
+
+<section class="wrap" style="padding-bottom: 96px">
+<p class="eyebrow" style="margin-bottom: 8px">Product strategy breakdown</p>
+
+<div class="sec"><div><span class="mono" style="color: #1D4ED8; font-size: 14px">01</span><h3>Context</h3></div><div class="body">
+<p>This picks up where my Zeta Global work left off. Marketing platforms sit on rich first-party signals, and AI campaign builders are now table stakes. Most of them output an audience and a projected return with no way to see how it was reached.</p>
+</div></div>
+
+<div class="sec"><div><span class="mono" style="color: #1D4ED8; font-size: 14px">02</span><h3>Problem</h3></div><div class="body">
+<p>Black-box projections create false precision. A campaign can show strong ROAS while adding little incremental margin — it reached people who would have bought anyway.</p>
+</div></div>
+
+<div class="sec"><div><span class="mono" style="color: #1D4ED8; font-size: 14px">03</span><h3>Who it's for</h3></div><div class="body">
+<div class="two">
+<div class="box"><strong>Campaign managers</strong><p style="color: #2F3B46; font-size: 15px">Need a strong first draft fast, without a data-science queue.</p></div>
+<div class="box"><strong>Marketing leads &amp; finance</strong><p style="color: #2F3B46; font-size: 15px">Need to defend the spend — on margin, not just on ROAS.</p></div>
+</div>
+</div></div>
+
+<div class="sec"><div><span class="mono" style="color: #1D4ED8; font-size: 14px">04</span><h3>Strategic bet</h3></div><div class="body">
+<p style="font-size: 22px; line-height: 1.4" class="disp">Transparency is the differentiator. A campaign builder that exposes its economics wins the trust of the people who sign off on budget.</p>
+</div></div>
+
+<div class="sec"><div><span class="mono" style="color: #1D4ED8; font-size: 14px">05</span><h3>Scope decisions</h3></div><div class="body">
+<div class="two">
+<div class="box"><span class="eyebrow">In</span><ul><li>Campaign proposals from three signal types</li><li>A visible economic model behind every output</li><li>A written drawbacks and guardrails analysis</li><li>Next: LLM-generated subject lines and content</li></ul></div>
+<div class="box"><span class="eyebrow">Out</span><ul><li>A single headline ROAS with no model behind it</li><li>Real customer data — simulated datasets only</li><li>Autonomous launch — a person approves every campaign</li></ul></div>
+</div>
+</div></div>
+
+<div class="sec"><div><span class="mono" style="color: #1D4ED8; font-size: 14px">06</span><h3>How it works</h3></div><div class="body">
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 200px), 1fr)); gap: 12px">
+<div class="box"><span class="mono" style="font-size: 13px; color: #4A5866">Brief</span><span>Marketer sets the goal in the web app</span></div>
+<div class="box"><span class="mono" style="font-size: 13px; color: #4A5866">Build</span><span>n8n webhook runs the AI logic over the signals</span></div>
+<div class="box"><span class="mono" style="font-size: 13px; color: #4A5866">Explain</span><span>Audience, channel and the economics behind them</span></div>
+<div class="box"><span class="mono" style="font-size: 13px; color: #4A5866">Approve</span><span>A person signs off before anything runs</span></div>
+</div>
+</div></div>
+
+<div class="sec"><div><span class="mono" style="color: #1D4ED8; font-size: 14px">07</span><h3>Metrics I'd hold it to</h3></div><div class="body">
+<div class="two">
+<div class="box"><span class="eyebrow">North star</span><strong>Incremental margin per campaign</strong><p style="color: #2F3B46; font-size: 15px">Not ROAS — ROAS rewards reaching people who'd buy anyway.</p></div>
+<div class="box"><span class="eyebrow">Adoption</span><strong>Proposals launched with light edits · time to first draft</strong></div>
+<div class="box"><span class="eyebrow">Guardrails</span><strong>Consent coverage · disparate-impact checks · cost per campaign</strong></div>
+</div>
+</div></div>
+
+<div class="sec"><div><span class="mono" style="color: #1D4ED8; font-size: 14px">08</span><h3>Risks &amp; trade-offs</h3></div><div class="body">
+<p><strong>False precision.</strong> A clean number invites more trust than the data supports.</p>
+<p><strong>Privacy.</strong> Location and transaction data fall under GDPR, CCPA and India's DPDP Act — consent and purpose limits shape what's allowed.</p>
+<p><strong>Disparate impact.</strong> Targeting on behavioural signals can exclude groups unfairly without anyone intending it.</p>
+<p><strong>Operational controls.</strong> Approval, spend caps and audit trails before any of this runs unattended.</p>
+</div></div>
+
+<div class="sec" style="border-bottom: 1px solid #CBD3D8"><div><span class="mono" style="color: #1D4ED8; font-size: 14px">09</span><h3>Outcome &amp; learning</h3></div><div class="body">
+<p style="font-size: 22px; line-height: 1.4" class="disp">Writing the drawbacks section first made the product better — every guardrail became a feature, not a footnote.</p>
+</div></div>
+</section>
+
+<footer style="background: #0E1A24">
+<div class="wrap" style="padding-top: 56px; padding-bottom: 56px; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 24px">
+<a href="../index.html" class="mono" style="color: #E8EDF0; text-decoration: none; padding: 12px 0">← All work</a>
+<a href="angie.html" class="disp" style="color: #E8EDF0; text-decoration: none; font-size: 28px; font-weight: 700; padding: 12px 0">Next: Angie →</a>
+</div>
+</footer>
+
+</div>
+</body>
+</html>

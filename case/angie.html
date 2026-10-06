@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Angie — Samiksha Prasad</title>
+<meta name="description" content="Samiksha Prasad — Product Manager, B2B SaaS: platform, identity &amp; access, martech.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&amp;family=IBM+Plex+Mono:wght@400;500&amp;family=IBM+Plex+Sans:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#F2F4F3}
+a{color:#1D4ED8}a:hover{color:#0E1A24}
+.pf{font-family:'IBM Plex Sans',ui-sans-serif,system-ui,sans-serif;color:#0E1A24;background:#F2F4F3;line-height:1.55;font-size:17px}
+.wrap{max-width:1200px;margin:0 auto;padding:0 40px;box-sizing:border-box}
+.disp{font-family:'Bricolage Grotesque','IBM Plex Sans',sans-serif;letter-spacing:-0.02em}
+.mono{font-family:'IBM Plex Mono',ui-monospace,monospace}
+.eyebrow{font-family:'IBM Plex Mono',ui-monospace,monospace;font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:#4A5866;margin:0}
+.rail{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr));border-top:2px solid #0E1A24;border-bottom:1px solid #CBD3D8}
+.rail>div{padding:20px 20px 20px 0;display:flex;flex-direction:column;gap:6px}
+.sec{display:grid;grid-template-columns:minmax(0,280px) minmax(0,1fr);gap:40px;padding:40px 0;border-top:1px solid #CBD3D8}
+.sec h3{margin:0;font-family:'Bricolage Grotesque','IBM Plex Sans',sans-serif;font-size:26px;line-height:1.15;letter-spacing:-0.01em}
+.sec p{margin:0}
+.body{display:flex;flex-direction:column;gap:14px;max-width:720px}
+.two{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));gap:20px}
+.box{background:#fff;border:1px solid #CBD3D8;border-radius:6px;padding:24px;display:flex;flex-direction:column;gap:10px}
+.box ul{margin:0;padding-left:20px;display:flex;flex-direction:column;gap:8px}
+.ph{color:#4A5866;background:#E6EAE8;padding:1px 6px;border-radius:3px;font-family:'IBM Plex Mono',ui-monospace,monospace;font-size:14px}
+@media (max-width:720px){.wrap{padding:0 20px}.hero-h{font-size:42px !important}.sec{grid-template-columns:minmax(0,1fr);gap:12px}}
+</style>
+</head>
+<body>
+<div class="pf">
+
+<header style="border-bottom: 1px solid #CBD3D8">
+<nav class="wrap mono" style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 16px; min-height: 64px; font-size: 14px">
+<a href="../index.html" style="color: #0E1A24; text-decoration: none; padding: 12px 0">← All work</a>
+<a href="streetlight-identity-access.html" style="color: #0E1A24; text-decoration: none; padding: 12px 0">Back to Case 01 →</a>
+</nav>
+</header>
+
+<section class="wrap" style="padding-top: 80px; padding-bottom: 56px; display: flex; flex-direction: column; gap: 24px">
+<p class="eyebrow" style="color: #1D4ED8">Case 05 · AI prototype · Agentic workflow</p>
+<h1 class="disp hero-h" style="margin: 0; font-size: 64px; line-height: 1.04; font-weight: 700; max-width: 980px">Angie — a personal assistant that lives in Telegram</h1>
+<p style="margin: 0; font-size: 21px; max-width: 760px; color: #2F3B46">Send Angie a voice note or a message; she summarises email, checks the calendar, and manages tasks and contacts — then replies in the same chat. Built to learn tool-using agents by shipping one.</p>
+</section>
+
+<section class="wrap" style="padding-bottom: 64px">
+<div class="rail">
+<div><span class="eyebrow">Role</span><span>Solo — design, build, deployment</span></div>
+<div><span class="eyebrow">Interface</span><span>Telegram · voice and text</span></div>
+<div><span class="eyebrow">Stack</span><span>n8n · OpenAI speech-to-text · Gmail · Calendar · Baserow</span></div>
+<div><span class="eyebrow">Hosting</span><span>Railway (from local Docker)</span></div>
+</div>
+</section>
+
+<section class="wrap" style="padding-bottom: 96px">
+<p class="eyebrow" style="margin-bottom: 8px">Product strategy breakdown</p>
+
+<div class="sec"><div><span class="mono" style="color: #1D4ED8; font-size: 14px">01</span><h3>Context</h3></div><div class="body">
+<p>Personal admin is spread across email, a calendar, a task list and a contact book — four apps to answer one question like "what do I need to do before tomorrow's meeting?"</p>
+</div></div>
+
+<div class="sec"><div><span class="mono" style="color: #1D4ED8; font-size: 14px">02</span><h3>Problem</h3></div><div class="body">
+<p>Switching apps is slow, especially on a phone or on the move. The answer usually needs more than one source.</p>
+</div></div>
+
+<div class="sec"><div><span class="mono" style="color: #1D4ED8; font-size: 14px">03</span><h3>Who it's for</h3></div><div class="body">
+<div class="two">
+<div class="box"><strong>A busy individual (me, first)</strong><p style="color: #2F3B46; font-size: 15px">Wants answers by voice from a chat app already open all day.</p></div>
+</div>
+</div></div>
+
+<div class="sec"><div><span class="mono" style="color: #1D4ED8; font-size: 14px">04</span><h3>Strategic bet</h3></div><div class="body">
+<p style="font-size: 22px; line-height: 1.4" class="disp">Put the assistant where the user already is. A chat interface with voice beats another app to open.</p>
+<p>This is a genuine agent: the model decides which tools to call — email, calendar, tasks, contacts — based on the request, rather than following a fixed path.</p>
+</div></div>
+
+<div class="sec"><div><span class="mono" style="color: #1D4ED8; font-size: 14px">05</span><h3>Scope decisions</h3></div><div class="body">
+<div class="two">
+<div class="box"><span class="eyebrow">In</span><ul><li>Voice and text input</li><li>Email summaries, calendar lookup</li><li>Tasks and contacts in Baserow</li></ul></div>
+<div class="box"><span class="eyebrow">Hosting choice</span><ul><li>Railway over n8n Cloud or a raw VPS — managed HTTPS without running a server</li></ul></div>
+</div>
+</div></div>
+
+<div class="sec"><div><span class="mono" style="color: #1D4ED8; font-size: 14px">06</span><h3>How it works</h3></div><div class="body">
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 200px), 1fr)); gap: 12px">
+<div class="box"><span class="mono" style="font-size: 13px; color: #4A5866">Trigger</span><span>Telegram message or voice note</span></div>
+<div class="box"><span class="mono" style="font-size: 13px; color: #4A5866">Transcribe</span><span>Voice → text via OpenAI speech-to-text</span></div>
+<div class="box"><span class="mono" style="font-size: 13px; color: #4A5866">Reason</span><span>AI assistant picks Gmail, Calendar or Baserow tools</span></div>
+<div class="box"><span class="mono" style="font-size: 13px; color: #4A5866">Reply</span><span>Answer sent back in Telegram</span></div>
+</div>
+</div></div>
+
+<div class="sec"><div><span class="mono" style="color: #1D4ED8; font-size: 14px">07</span><h3>Metrics I'd hold it to</h3></div><div class="body">
+<div class="two">
+<div class="box"><span class="eyebrow">North star</span><strong>Requests answered correctly without opening another app</strong></div>
+<div class="box"><span class="eyebrow">Quality</span><strong>Right tool chosen · response time</strong></div>
+<div class="box"><span class="eyebrow">Guardrails</span><strong>No action on email or calendar without confirmation · cost per request</strong></div>
+</div>
+</div></div>
+
+<div class="sec"><div><span class="mono" style="color: #1D4ED8; font-size: 14px">08</span><h3>Risks &amp; trade-offs</h3></div><div class="body">
+<p><strong>Access to personal data.</strong> An assistant that reads email needs tight scopes and clear limits on what it can do, not just read.</p>
+<p><strong>Infrastructure is product.</strong> Telegram webhooks require HTTPS — the local Docker setup failed on exactly that, which drove the move to Railway.</p>
+</div></div>
+
+<div class="sec" style="border-bottom: 1px solid #CBD3D8"><div><span class="mono" style="color: #1D4ED8; font-size: 14px">09</span><h3>Outcome &amp; learning</h3></div><div class="body">
+<p style="font-size: 22px; line-height: 1.4" class="disp">Building an agent end to end taught me where agent complexity actually lives: tool permissions, deployment and failure handling — not the prompt.</p>
+</div></div>
+</section>
+
+<footer style="background: #0E1A24">
+<div class="wrap" style="padding-top: 56px; padding-bottom: 56px; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 24px">
+<a href="../index.html" class="mono" style="color: #E8EDF0; text-decoration: none; padding: 12px 0">← All work</a>
+<a href="../index.html#contact" class="disp" style="color: #E8EDF0; text-decoration: none; font-size: 28px; font-weight: 700; padding: 12px 0">Get in touch →</a>
+</div>
+</footer>
+
+</div>
+</body>
+</html>

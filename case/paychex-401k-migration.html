@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Paychex 401(k) Migration — Samiksha Prasad</title>
+<meta name="description" content="Samiksha Prasad — Product Manager, B2B SaaS: platform, identity &amp; access, martech.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&amp;family=IBM+Plex+Mono:wght@400;500&amp;family=IBM+Plex+Sans:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#F2F4F3}
+a{color:#1D4ED8}a:hover{color:#0E1A24}
+.pf{font-family:'IBM Plex Sans',ui-sans-serif,system-ui,sans-serif;color:#0E1A24;background:#F2F4F3;line-height:1.55;font-size:17px}
+.wrap{max-width:1200px;margin:0 auto;padding:0 40px;box-sizing:border-box}
+.disp{font-family:'Bricolage Grotesque','IBM Plex Sans',sans-serif;letter-spacing:-0.02em}
+.mono{font-family:'IBM Plex Mono',ui-monospace,monospace}
+.eyebrow{font-family:'IBM Plex Mono',ui-monospace,monospace;font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:#4A5866;margin:0}
+.rail{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr));border-top:2px solid #0E1A24;border-bottom:1px solid #CBD3D8}
+.rail>div{padding:20px 20px 20px 0;display:flex;flex-direction:column;gap:6px}
+.sec{display:grid;grid-template-columns:minmax(0,280px) minmax(0,1fr);gap:40px;padding:40px 0;border-top:1px solid #CBD3D8}
+.sec h3{margin:0;font-family:'Bricolage Grotesque','IBM Plex Sans',sans-serif;font-size:26px;line-height:1.15;letter-spacing:-0.01em}
+.sec p{margin:0}
+.body{display:flex;flex-direction:column;gap:14px;max-width:720px}
+.two{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));gap:20px}
+.box{background:#fff;border:1px solid #CBD3D8;border-radius:6px;padding:24px;display:flex;flex-direction:column;gap:10px}
+.box ul{margin:0;padding-left:20px;display:flex;flex-direction:column;gap:8px}
+.big{font-family:'Bricolage Grotesque','IBM Plex Sans',sans-serif;font-size:40px;font-weight:700;line-height:1;letter-spacing:-0.02em}
+@media (max-width:720px){.wrap{padding:0 20px}.hero-h{font-size:42px !important}.sec{grid-template-columns:minmax(0,1fr);gap:12px}}
+</style>
+</head>
+<body>
+<div class="pf">
+
+<header style="border-bottom: 1px solid #CBD3D8">
+<nav class="wrap mono" style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 16px; min-height: 64px; font-size: 14px">
+<a href="../index.html" style="color: #0E1A24; text-decoration: none; padding: 12px 0">← All work</a>
+<a href="zeta-opportunity-explorer.html" style="color: #0E1A24; text-decoration: none; padding: 12px 0">Next: Zeta Opportunity Explorer →</a>
+</nav>
+</header>
+
+<section class="wrap" style="padding-top: 80px; padding-bottom: 56px; display: flex; flex-direction: column; gap: 24px">
+<p class="eyebrow" style="color: #1D4ED8">Case 02 · Paychex IT Solutions · Shipped</p>
+<h1 class="disp hero-h" style="margin: 0; font-size: 64px; line-height: 1.04; font-weight: 700; max-width: 1000px">Migrating 360 file-based recordkeeping integrations to API-based</h1>
+<p style="margin: 0; font-size: 21px; max-width: 780px; color: #2F3B46">I led the migration of 360 file-based 401(k) recordkeeping integrations to an API-based platform serving 100K+ users. The real product work was sequencing that migration — and it cut vendor onboarding turnaround by 70%.</p>
+</section>
+
+<section class="wrap" style="padding-bottom: 64px">
+<div class="rail">
+<div><span class="eyebrow">Role</span><span>Product Owner, ePlan Services</span></div>
+<div><span class="eyebrow">Scale</span><span>100K+ users · 360 file-based integrations</span></div>
+<div><span class="eyebrow">Domain</span><span>HR/payroll · 401(k) retirement plans</span></div>
+<div><span class="eyebrow">Timeline</span><span>Jul 2023 – Nov 2024</span></div>
+</div>
+</section>
+
+<section class="wrap" style="padding-bottom: 96px">
+<p class="eyebrow" style="margin-bottom: 8px">Product strategy breakdown</p>
+
+<div class="sec"><div><span class="mono" style="color: #1D4ED8; font-size: 14px">01</span><h3>Context</h3></div><div class="body">
+<p>ePlan Services is Paychex's 401(k) retirement platform. Recordkeeping — the system of record for participants' retirement accounts — ran on a legacy setup, connected to a large network of vendors through 360 file-based integrations.</p>
+</div></div>
+
+<div class="sec"><div><span class="mono" style="color: #1D4ED8; font-size: 14px">02</span><h3>Problem</h3></div><div class="body">
+<p>Onboarding a vendor onto the legacy recordkeeping system was slow. With hundreds of integrations to move, a migration done in the wrong order would stall on dependencies — and in retirement plans, errors aren't an option.</p>
+</div></div>
+
+<div class="sec"><div><span class="mono" style="color: #1D4ED8; font-size: 14px">03</span><h3>Who it's for</h3></div><div class="body">
+<div class="two">
+<div class="box"><strong>Plan participants</strong><p style="color: #2F3B46; font-size: 15px">100K+ people whose retirement records must stay accurate through the move.</p></div>
+<div class="box"><strong>Integration vendors</strong><p style="color: #2F3B46; font-size: 15px">Need a faster, clearer path onto the platform.</p></div>
+</div>
+</div></div>
+
+<div class="sec"><div><span class="mono" style="color: #1D4ED8; font-size: 14px">04</span><h3>Strategic bet</h3></div><div class="body">
+<p style="font-size: 22px; line-height: 1.4" class="disp">In a migration, the sequence is the strategy. Get the integration order right and speed follows; get it wrong and everything waits on everything else.</p>
+<p>Moving to an API-based platform made vendor onboarding faster by design. Sequencing the move of all 360 file-based integrations to API determined how quickly that benefit arrived.</p>
+</div></div>
+
+<div class="sec"><div><span class="mono" style="color: #1D4ED8; font-size: 14px">05</span><h3>How I prioritised</h3></div><div class="body">
+<div class="two">
+<div class="box"><span class="eyebrow">Prioritisation lens</span><ul><li>Customer impact</li><li>Business value</li><li>Technical dependencies</li></ul></div>
+<div class="box"><span class="eyebrow">Constraint</span><ul><li>Compliance with retirement-plan standards on every delivery — non-negotiable, not a trade-off</li></ul></div>
+</div>
+</div></div>
+
+<div class="sec"><div><span class="mono" style="color: #1D4ED8; font-size: 14px">06</span><h3>How it worked</h3></div><div class="body">
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 200px), 1fr)); gap: 12px">
+<div class="box"><span class="mono" style="font-size: 13px; color: #4A5866">Translate</span><span>Business and engineering needs into Epics, PRDs and BRDs</span></div>
+<div class="box"><span class="mono" style="font-size: 13px; color: #4A5866">Define done</span><span>Clear acceptance criteria on every requirement</span></div>
+<div class="box"><span class="mono" style="font-size: 13px; color: #4A5866">Sequence</span><span>360 file-based integrations moved to API, ordered by impact, value and dependency</span></div>
+<div class="box"><span class="mono" style="font-size: 13px; color: #4A5866">Align</span><span>One backlog across engineering, UX and client-facing teams</span></div>
+</div>
+</div></div>
+
+<div class="sec"><div><span class="mono" style="color: #1D4ED8; font-size: 14px">07</span><h3>Results</h3></div><div class="body">
+<div class="two">
+<div class="box"><span class="big">−70%</span><strong>Vendor onboarding turnaround</strong></div>
+<div class="box"><span class="big">360</span><strong>File-based integrations migrated to API</strong></div>
+<div class="box"><span class="big">100K+</span><strong>Users served by the new API-based platform</strong></div>
+</div>
+</div></div>
+
+<div class="sec"><div><span class="mono" style="color: #1D4ED8; font-size: 14px">08</span><h3>Risks &amp; trade-offs</h3></div><div class="body">
+<p><strong>Data integrity.</strong> Recordkeeping is people's retirement money; a migration error is a trust and compliance failure, not a bug.</p>
+<p><strong>Dependency chains.</strong> With 360 integrations, one blocked vendor can hold up many others.</p>
+<p><strong>Vendors move at different speeds.</strong> Each file-based vendor has to be ready to switch to API before its integration can move.</p>
+</div></div>
+
+<div class="sec" style="border-bottom: 1px solid #CBD3D8"><div><span class="mono" style="color: #1D4ED8; font-size: 14px">09</span><h3>Learning</h3></div><div class="body">
+<p style="font-size: 22px; line-height: 1.4" class="disp">In regulated platforms, precise requirements are the product. Clear acceptance criteria are what let a big migration move fast and stay compliant.</p>
+</div></div>
+</section>
+
+<footer style="background: #0E1A24">
+<div class="wrap" style="padding-top: 56px; padding-bottom: 56px; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 24px">
+<a href="../index.html" class="mono" style="color: #E8EDF0; text-decoration: none; padding: 12px 0">← All work</a>
+<a href="zeta-opportunity-explorer.html" class="disp" style="color: #E8EDF0; text-decoration: none; font-size: 28px; font-weight: 700; padding: 12px 0">Next: Zeta Opportunity Explorer →</a>
+</div>
+</footer>
+
+</div>
+</body>
+</html>
